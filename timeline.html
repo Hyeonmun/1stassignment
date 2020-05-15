@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"> </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Timeline</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="title"> 
+        <h1>나의 일생</h1>
+    </div>
+    <div class="buttons">
+        <button type="button" class="btn btn-outline-primary" class="changebg" onclick="
+        document.querySelector('body').style.backgroundImage='url(wil.jpg)';
+        document.querySelector('h1').style.color='white'
+        document.querySelector('body').style.backgroundSize='cover';
+        ">윌리엄</button>
+        <button type="button" class="btn btn-outline-primary" class="changebg" onclick="
+        document.querySelector('body').style.backgroundImage='url(ben.jpg)';
+        document.querySelector('h1').style.color='black'
+        document.querySelector('body').style.backgroundSize='cover';
+        ">벤틀리</button>
+    </div>
+    <div class="content"> 
+        <div class="card">
+            <img src='baby.jpg'>
+            <div class="date">2000.11.29</div>
+            <div class="what">탄생</div>
+            <div class="where">인천광역시</div>
+            <div class="text">태어남</div>
+            <div class="dot"></div>
+        </div>
+        <div class="card">
+            <img src="high.jpg">
+            <div class="date">2007.03.02</div>
+            <div class="what">초등학교 입학</div>
+            <div class="where">인천광역시</div>
+            <div class="text">백운초등학교에 입학함</div>
+            <div class="dot"></div>
+        </div>
+        <div class="card">
+            <img src="airplane.jpg">
+            <div class="date">2011.12.29</div>
+            <div class="what">이민</div>
+            <div class="where">브라질</div>
+            <div class="text">잠시 외국에 살게됨</div>
+            <div class="dot"></div>
+        </div>
+        <div class="card">
+            <img src="elementary.jpg">
+            <div class="date">2016.03.02</div>
+            <div class="what">고등학교 입학</div>
+            <div class="where">인천광역시</div>
+            <div class="text">하늘고등학교에 입학함</div>
+            <div class="dot"></div>
+        </div>
+        <div class="card">
+            <img src="univ.jpg">
+            <div class="date">2019.03.02</div>
+            <div class="what">대학교 입학</div>
+            <div class="where">서울특별시</div>
+            <div class="text">성균관대학교에 입학함</div>
+            <div class="dot"></div>
+        </div>
+
+        <div class="line"> </div>
+        <a href="#title"><button type="button" class="btn btn-outline-primary" id="tothetop">▲TOP</botton></a>
+    </div>
+</body>
+</html>
