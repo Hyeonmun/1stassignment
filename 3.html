@@ -51,8 +51,9 @@
             padding: 25px;
         }
         h2 {
-            color:black;
+            color:blue;
             font-family: 'Nanum Myeongjo', serif;
+            
         }
         #title {
             color: black
@@ -65,16 +66,21 @@
             width: 100%
         }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
 </head>
 <body>
     <div class="container">
     <h1><a href="index.html" id="title"> 나만의 웹페이지 </a></h1>
+    <input type="button" value="night" onclick="
+       nightDayHandler(this);
+    ">
     <div id="grid">
         <ul class="nav nav-pills nav-stacked">
             <li role="presentation"><a href="1.html">안녕하세요</a></li>
             <li role="presentation"><a href="2.html">반갑습니다</a></li>
             <li role="presentation" class="active"><a href="3.html">박현문입니다</a></li>
-            <li role="presentation"><a href="BINGO.html">빙고</a></li>
+            <li role="presentation"><a href="password.html">빙고</a></li>
             <li role="presentation"><a href="timeline.html">나의 일대기</a></li>
         </ul>
         <div id="article">
